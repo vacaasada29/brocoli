@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Scream Again";
+  src: url(./font/Scream\ Again.ttf);
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0 auto;
+  background-color: #272525;
+  color: rgb(245, 203, 184);
+}
+
+header h1{
+  color: #f49dff;
+  letter-spacing: 10px;
+  font-size: clamp(1rem, 6vw, 2.5rem);
+  text-align: center;
+  font-family: "Scream Again";
+}
+
+header h2 {
+  font-size: clamp(1rem, 4vw, 1.6rem );
+  text-align: center;
+}
+
+fieldset {
+  border-radius: 30px;
+  margin: auto;
+  box-shadow: 0 0 10px #c5baba;
+  border: none;
+}
+
+legend {
+  border-radius: 20px;
+  background-color: #800f8f;
+  padding: 0.3em 1em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+#boton-crear {
+  font-size: 1.7em;
+  padding: 0.5em;
+  width: auto;
+  box-shadow: 0 0 5px #e0d8d8;
+  border: none;
+}
+
+.centrado {
+  text-align: center;
+  font-size: clamp(0.6rem, 2vw, 1rem);
+}
+
+div {
+  margin: auto;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+div input:not([type="radio"]):not([type="checkbox"]) {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 6px;
+}
+
+button[type="submit"] {
+  background-color: #f7bb5a;
+  color: #000a66;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff9d00;
+  color: #000a66;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+  accent-color: #800f8f;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #800f8f;
+}
+
+input {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 3px solid rgb(179, 255, 195);
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+#terminos {
+  font-size: clamp(0.5rem, 50vw, 1rem);
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.radio-opcion {
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.radio-opcion input[type="radio"] {
+  margin-right: 7px;
+}
+
+
+img {
+  width: clamp(20px, 5vw, 32px);
+}
+
+@media (max-width: 700px){
+  div {
+    width: 90%;
+  }
+}
